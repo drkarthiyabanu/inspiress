@@ -1,6 +1,6 @@
 Options +FollowSymLinks
 RewriteEngine On
-RewriteBase /
+RewriteBase /inspire/
 
 # Skip rewrite if it's a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-d
