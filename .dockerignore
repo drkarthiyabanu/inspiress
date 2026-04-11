@@ -1,0 +1,8 @@
+Dockerfile
+docker-compose.yml
+init.sql
+admin_edinz.sql
+.dockerignore
+.git
+.gitignore
+README.md

@@ -1,0 +1,11 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteBase /inspire/admin/
+
+# Redirect exact "/inspire/admin/" to login.php
+RewriteCond %{REQUEST_URI} ^/inspire/admin/?$ [NC]
+RewriteRule ^$ login.php [R=302,L]
+
+# Rewrite clean URLs to .php if the file exists
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*)$ $1.php [L]

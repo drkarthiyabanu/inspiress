@@ -1,0 +1,156 @@
+/* 
+    blue = #3484be
+    orange = #f3711e
+*/
+body{
+    font-family: 'Poppins', sans-serif!important;
+}
+.logoNav{
+    width: 20%;
+}
+
+.blue{
+    color:#3484be;
+}
+.orange{
+    color: #f3711e;
+}
+p{
+    text-align: justify;
+}
+.activeMenu .nav-link{
+        border-radius: 56%;
+    background: orange;
+    color: whitesmoke!important;
+}
+.dropdown-item:hover{
+    background-color: orange!important;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    border-radius: 56%;
+    background: #3484be;
+    color: whitesmoke!important;
+}
+.nav-item{
+    margin: 5px;
+}
+
+.enquiry{
+    background:rgb(243, 133, 30)!important;
+    color:white!important;
+    position: fixed;
+    bottom: 150px;
+    right: 0px;
+    z-index: 10;
+    z-index: 2;
+}
+.pulseOwn
+{
+     box-shadow: 0 0 0 rgb(243, 133, 30, 0.7);
+     animation: pulseOwn 1s infinite;
+}
+.pulseOwn:hover 
+{
+    animation: none;
+}
+@-webkit-keyframes pulseOwn {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgb(243, 133, 30, 0.7);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgb(243, 133, 30, 0.7);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgb(243, 133, 30, 0.7);
+    }
+  }
+  @keyframes pulseOwn {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgb(243, 133, 30, 0.7);
+      box-shadow: 0 0 0 0 rgb(243, 133, 30, 0.7);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgb(243, 133, 30, 0.7);
+        box-shadow: 0 0 0 10px rgb(243, 133, 30, 0.7);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgb(243, 133, 30, 0.7);
+        box-shadow: 0 0 0 0 rgb(243, 133, 30, 0);
+    }
+  }
+.teamBorder{
+    /* border: 2px solid rgb(52,132,190);
+    border-top-color: white; */
+}
+.teamProfileImage{
+    border-radius: 53%;
+    width: 50%;
+    margin-top: 8%;
+    margin-bottom: -14%;
+    border: 5px solid white;
+}
+.magicGradient{
+    background: rgb(52,132,190);
+    background: linear-gradient(90deg, rgba(52,132,190,1) 0%, rgba(52,132,190,1) 0%, rgb(243, 133, 30) 100%);
+}
+
+.socialIcons{
+    font-size:26px;
+}
+.transformSmall{
+    transform: scale(0.9);
+}
+
+.footerLink{
+    color: black !important;
+}
+
+.whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 9
+}
+.bottomToTop{
+    position: fixed;
+    font-size: 50px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 10;
+    cursor: pointer;
+}
+@media only screen and (max-width: 600px)
+{
+    .teamName{
+        padding-top: 15%!important;
+    }
+}
+
+@media only screen and (max-width: 900px)
+{
+    .text-center-nav {
+        text-align: center;
+    }
+    .teamName{
+        padding-top: 10%;
+    }
+}
+@media only screen and (min-width: 900px){
+    .teamName{
+        padding-top: 20%;
+    }
+}
+
+/*  About Us */
+
+.aboutBg{
+    background: -webkit-linear-gradient(70deg, #3484be78 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, var(--white) 60%, #f3711e96 3%);
+    background: -o-linear-gradient(70deg, #3484be78 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, var(--white) 60%, #f3711e96 3%);
+    background: -moz-linear-gradient(70deg, #3484be78 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, var(--white) 60%, #f3711e96 3%);
+    background: linear-gradient(70deg, #3484be78 30%, rgba(0,0,0,0) 30%), linear-gradient(30deg, var(--white) 60%, #f3711e96 3%);
+}
+
+.fa-smile{
+    color:#3484be;
+}
+

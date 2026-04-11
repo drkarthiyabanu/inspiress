@@ -1,0 +1,396 @@
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Inspire Solutions</title>
+	<meta name="title" content="Inspire Solutions" /><meta name="keywords" content="Inspire Solutions" /><meta name="description" content="Inspire Solutions" /><!--custom css-->
+	<link href="css/style.css" rel="stylesheet" /><!-- Bootstrap CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet" /><!--Owl carousel-->
+	<link href="css/owl.carousel.min.css" rel="stylesheet" />
+	<link href="css/owl.theme.default.min.css" rel="stylesheet" />
+	<link href="css/fontawesome.css" rel="stylesheet" />
+	<link href="css/aos.css" rel="stylesheet" />
+	<link href="css/animate.css" rel="stylesheet" />
+	<link href="css/googleFonts.css" rel="stylesheet" /><script src="js/jquery.slim.min.js"></script>
+	<style type="text/css">.disabled {
+    pointer-events: none;
+    opacity: 0.4;
+}
+	</style>
+</head>
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-white rounded" id="nav">
+	<a class="navbar-brand d-block d-lg-none d-xl-none" href="#"><img alt="" class="img-fluid " src="img/logo.png" /></a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse justify-content-around" id="navbarNavDropdown">
+<div class="d-none d-lg-block d-xl-block"><a class="navbar-brand" href="#"><img alt="" class="img-fluid" src="img/logo.png" /><p style="text-align: center;font-size:10px">(A TN Govt Registered, ISO 9001-2015 Certified &amp; AICTE  Associated  Organization)</p></a>
+	</div>
+
+
+<ul class="navbar-nav text-center-nav">
+	<li class="nav-item activeMenu"><a class="nav-link" href="index.html">Home</a></li>
+	<li class="nav-item"><a class="nav-link" href="courses.php">Our Courses</a></li>
+	<li class="nav-item">
+	<a class="nav-link" href="gallery.php" >Gallery</a>
+	</li>
+	<li class="nav-item"><a class="nav-link" href="con/2024" target="blank">Conference</a></li>
+	<li class="nav-item"><a class="nav-link" href="aboutUs.html">Who We Are</a></li>
+	<li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Training Solutions </a>
+	<div aria-labelledby="navbarDropdown" class="dropdown-menu"><a class="dropdown-item" href="executive.html">Executive Coaching </a> <a class="dropdown-item" href="softSkill.html">Soft skill Training </a> <a class="dropdown-item" href="leadership.html">Leadership Training</a> <a class="dropdown-item" href="technicalTeaching.html">Techical Training Consultants</a></div>
+	</li>
+	<li class="nav-item"><a class="nav-link" href="clients.html">Our Clients</a></li>
+	<li class="nav-item"><a class="nav-link" href="contactUs.html">Contact Us</a></li>	
+	<li class="nav-item dropdown"><a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" id="navbarDropdown" role="button">Certificate </a>
+		<div aria-labelledby="navbarDropdown" class="dropdown-menu"><a class="dropdown-item" href="feedback.php">Feedback Form </a> <a class="dropdown-item" href="verify.html" target="blank">Certificate Verification </a></div>
+	</li>
+	
+<!--	<li class="nav-item"><a class="nav-link" href="https://inspiresoftechsolutions.winuall.com/domain-login/login" target="blank">Login</a></li>
+	<li class="nav-item"><a class="nav-link" href="https://inspiresoftechsolutions.winuall.com/domain-login/register" target="blank">Register</a></li>-->
+
+</ul>
+</div>
+</nav>
+</header>
+<!-- Banner -->
+
+<div class="carousel slide" data-ride="carousel" id="carouselExampleControls" style="margin-top:-2%;">
+<div class="carousel-inner">
+<div class="carousel-item active"><img alt="..." class="d-block w-100" src="img/carousel01.jpg" /></div>
+
+<div class="carousel-item"><img alt="..." class="d-block w-100" src="img/carousel02.jpg" /></div>
+
+<div class="carousel-item"><img alt="..." class="d-block w-100" src="img/carousel03.jpg" /></div>
+
+<div class="carousel-item"><img alt="..." class="d-block w-100" src="img/carousel04.jpg" /></div>
+</div>
+<a class="carousel-control-prev" data-slide="prev" href="#carouselExampleControls" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#carouselExampleControls" role="button"> <span class="sr-only">Next</span> </a></div>
+<!-- Enquiry form -->
+
+<button type="button" id="enq_btn" class="btn enquiry pulseOwn" data-toggle="modal" data-target="#exampleModal">
+	<i class="far fa-address-book" style="font-size: 30px;"></i>
+</button>
+	
+	<!-- Modal -->
+
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" role="dialog" tabindex="-1">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel">Enquiry Form</h5>
+<button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true">&times;</span></button></div>
+
+<div class="modal-body">
+<form action="action.php" method="post">
+<div class="form-group"><input class="form-control" id="exampleInputPassword1" name="name" placeholder="Enter Name" required="" type="text" /></div>
+
+<div class="form-group"><input aria-describedby="emailHelp" class="form-control" name="email" placeholder="Enter E-mail" required="" type="email" /></div>
+
+<div class="form-group"><input class="form-control" id="exampleInputPassword1" name="mobile" pattern="[0-9]{10}" placeholder="Enter Mobile number" required="" type="text" /></div>
+
+<div class="form-group"><textarea aria-label="With textarea" class="form-control" name="message" placeholder="Message" required=""></textarea></div>
+
+<div class="text-center"><button class="btn btn-primary " name="submit_top" style="color: white;" type="submit">Submit</button></div>
+</form>
+</div>
+</div>
+</div>
+</div>
+<!-- Who we are -->
+
+<section>
+<div class="container">
+<h3 class="text-center pt-5 pb-5"><span class="blue">Inspire </span> <span class="orange"> Softech </span> <span class="blue"> Solutions </span></h3>
+
+<div class="row align-items-center">
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+<p>We are highly qualified professionals with a deep commitment to train, to help Corporate, colleges, schools, Faculties, students, governments, and other stakeholders to enhance their performance by using technology. Our commitment and sincerity in defining what learning can be, is what sets us apart. We are &ldquo; Dare to be Different&rdquo;</p>
+</div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid" src="img/carousel.jpg" /></div>
+</div>
+</div>
+</section>
+<!-- Our Team -->
+
+<section>
+<div class="container">
+<h2 class="text-center pt-5 pb-3"><span class="blue">Our </span> <span class="orange"> Team </span></h2>
+
+<div class="row">
+<div class="col-lg-3 shadow p-3 mb-5 bg-white rounded transformSmall jello" data-aos="fade-up" data-aos-duration="1500">
+<div>
+<div class="magicGradient text-center"><img alt="" class="img-fluid teamProfileImage " src="img/profile01.jpg" /></div>
+
+<div class="text-center  teamBorder">
+<h5 class="teamName">Dr.Karthiya Banu</h5>
+
+<p class="text-center">FOUNDER</p>
+
+<p>A computer science professional with 17 years of teaching experience and 14 years&rsquo; experience in the field of soft skills and technical training.</p>
+
+<div class="row justify-content-center">
+<p class="socialIcons jello"></p>
+
+<p class="pr-5 pl-5 socialIcons jello"></p>
+
+<p class="socialIcons jello"></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 shadow p-3 mb-5 bg-white rounded transformSmall jello" data-aos="fade-up" data-aos-duration="1500">
+<div>
+<div class="magicGradient text-center"><img alt="" class="img-fluid teamProfileImage " src="img/profile02.jpeg" /></div>
+
+<div class="text-center  teamBorder">
+<h5 class="teamName">Dr.RAVANAN R</h5>
+
+<p class="text-center">MENTOR</p>
+
+<p>Dr.R.RAVANAN joined Tamil Nadu Government Collegiate Service as Assistant Professor in Statistics.He serviced as a faculty in Government Arts College Tirutani and Presidency College, Chennai. He organized several workshops and conferences at Presidency College inviting Eminent Scholars like Professor S.R.S.Varadhan Abel Prize Awardee (Equivalent to Nobel Price) in Mathematics.</p>
+
+<div class="row justify-content-center">
+<p class="socialIcons jello"></p>
+
+<p class="pr-5 pl-5 socialIcons jello"></p>
+
+<p class="socialIcons jello"></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 shadow p-3 mb-5 bg-white rounded transformSmall jello" data-aos="fade-up" data-aos-duration="1500">
+<div>
+<div class="magicGradient text-center"><img alt="" class="img-fluid teamProfileImage " src="img/profile04.jpg" /></div>
+
+<div class="text-center  teamBorder">
+<h5 class="teamName">Dr.UMARANI S</h5>
+
+<p class="text-center">TECHNICAL CONSULTANT</p>
+
+<p>Encouraged students to participate and explore their talents in various inter and intra technical events (Over all Performance award received from Loyola Institute of Technology ,Chennai &ndash; 2010).Guided students in carrying out Industry Projects(Like Mobishare, Tamil Calendar, Cricket Score Board, Website Creation) , IEEE Based Research Projects and Applications Projects.</p>
+
+<div class="row justify-content-center">
+<p class="socialIcons jello"></p>
+
+<p class="pr-5 pl-5 socialIcons jello"></p>
+
+<p class="socialIcons jello"></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-lg-3 shadow p-3 mb-5 bg-white rounded transformSmall jello" data-aos="fade-up" data-aos-duration="1500">
+<div>
+<div class="magicGradient text-center"><img alt="" class="img-fluid teamProfileImage " src="img/profile03.jpg" /></div>
+
+<div class="text-center  teamBorder">
+<h5 class="teamName">Sundaram N K</h5>
+
+<p class="text-center">PRINCIPAL CONSULTANT</p>
+
+<p>He is a presenter of Training Programs in various Soft skills and also a Specialist Consultant in Human Resources, delivering programs and undertaking HR projects for major corporations on a range of Organisational and Human Resource issues. He is just 66 years young with 49 years experience.</p>
+
+<div class="row justify-content-center">
+<p class="socialIcons jello"></p>
+
+<p class="pr-5 pl-5 socialIcons jello"></p>
+
+<p class="socialIcons jello"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Training Solution -->
+
+<section>
+<div class="container">
+<h2 class="text-center pt-5 pb-5"><span class="blue">Training </span> <span class="orange"> Solutions </span></h2>
+
+<div class="row align-items-center">
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+<h3><span class="blue">Executive </span> <span class="orange"> Coaching </span></h3>
+
+<p>Executive Coaching is an efficient, high-impact process that helps high-performing people in leadership roles improve results in ways that are sustained over time.</p>
+
+<p>Executive Coaching is an efficient, high-impact process that helps high-performing people in leadership roles improve results in ways that are sustained over time.</p>
+</div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid pulse" src="img/Executive.png" /></div>
+</div>
+
+<div class="row align-items-center">
+<div class="col-lg-6 d-none d-xl-block d-lg-block" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid pulse" src="img/softSkills.png" /></div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+<h3><span class="blue">Soft skill </span> <span class="orange"> Training </span></h3>
+
+<p>One of the recent survey of India today states that &ldquo;Young India lacks soft skills&rdquo;. The importance of soft skills is often undervalued and less training is provided on it in educational institutions. Having identified this gap which challenges the students we would like to offer different courses which would help to bridge this gap and equip them with necessary people skills to become an empowered individual.</p>
+</div>
+
+<div class="col-lg-6 d-block d-lg-none d-xl-none" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid pulse" src="img/softSkills.png" /></div>
+</div>
+
+<div class="row align-items-center">
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+<h3><span class="blue">Leadership </span> <span class="orange"> Training </span></h3>
+
+<p>&quot;Leadership is a function of knowing yourself, having a vision that is well communicated, building trust among colleagues, and taking effective action to realize your own leadership potential.&quot;</p>
+</div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid pulse" src="img/leadership.png" /></div>
+</div>
+
+<div class="row align-items-center">
+<div class="col-lg-6 d-none d-xl-block d-lg-block" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid pulse" src="img/technicalTraining.png" /></div>
+
+<div class="col-lg-6" data-aos="fade-up" data-aos-duration="1500">
+<h3><span class="blue">Techical </span> <span class="orange"> Training </span> <span class="blue"> Consultants </span></h3>
+
+<p>Any Student, who is willing to pursue a career in Computer Science &amp; IT, should have STRATEGIC PLAN to develop skill set towards industry requirements.</p>
+
+<p>As the academic syllabuses do not completely cover all the industry specific technology, the only way to attain the industry specific knowledge and skill set is through value added training programs.</p>
+</div>
+
+<div class="col-lg-6 d-block d-lg-none d-xl-none" data-aos="fade-up" data-aos-duration="1500"><img alt="" class="img-fluid pulse" src="img/technicalTraining.png" style="width: 80%;" /></div>
+</div>
+</div>
+</section>
+<!-- Our Clients -->
+
+<section>
+<div class="container">
+<h2 class="text-center pt-5 pb-5"><span class="blue">Our </span> <span class="orange"> Clients </span></h2>
+
+<div class="owl-carousel owl-theme">
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college1.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college2.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college3.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college4.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college5.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college6.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college7.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college8.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college9.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college3.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college10.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college11.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/college12.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp1.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp2.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp3.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp4.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp5.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp6.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp7.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp8.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/corp9.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/govt1.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/govt2.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/govt3.png" /></div>
+
+<div class="item"><img alt="" class="img-fluid logo" src="img/clients/govt4.png" /></div>
+</div>
+</div>
+</section>
+
+<footer class="pt-5 text-center-nav">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 ">
+
+<h3 class="blue">Training Solutions</h3>
+
+<p><a class="footerLink" href="#">Executive Coaching</a></p>
+
+<p><a class="footerLink" href="#">Soft skill Training</a></p>
+
+<p><a class="footerLink" href="#">Leadership Training </a></p>
+
+<p><a class="footerLink" href="#">Techical Training Consultants</a></p>
+
+<img src="img/ias.png" alt="" width="80%">
+</div>
+
+<div class="col-lg-4">
+<h3 class="blue">Head Office</h3>
+
+<p style="border-top:1px solid; padding-top: 3%;">10th Floor, CITIUS A Block, Phase 1, <br />
+	Olympia Tech Park Plot No.1, SIDCO Industrial Estate, Guindy,Chennai-32</p>
+
+<p>044- 65255500</p>
+
+<p>+ 91 86674 93679</p>
+<a href="img/version_2.pdf" target="_blank">Download Brochure</a></div>
+
+<div class="col-lg-4">
+<h3 class="blue">Branch Offices</h3>
+
+<p>Flat No.508, Block-2,<br />
+Skyline City, Chandra Layout,<br />
+Bangalore- 560 072.</p>
+
+<p>080 &ndash; 22974968</p>
+
+<p>+91 988 487 3190</p>
+
+<p style="border-top:1px solid; padding-top: 3%;">401,Mayur Pankh 6th Road,<br />
+Chembur, Mumbai &ndash; 400071.</p>
+
+<p>+91 97693 51367</p>
+
+</div>
+</div>
+</div>		
+
+<div class="whatsapp "><a href="https://api.whatsapp.com/send?phone=8667493679&text=Hello" target="_blank"><img alt="" src="img/whatsapp-icon.png" /> </a></div>
+
+<div class="bottomToTop d-none"></div>
+
+<div class="container ">
+<div class="row justify-content-between">
+<p class="right"><a href="termsconditions.htm">Privacy Policy</a> | <a href="termsconditions.htm#terms">Terms of Services</a></p>
+</div>
+
+<div class="row justify-content-between">
+<p class="left">&copy; 2020 Inspire Softech Solutions. All Right Reserved</p>
+
+<p class="right">Powered By <a href="https://www.grepex.com/" target="_blank">Grepex Technologies</a></p>
+</div>
+
+<div class="row align-items-center disabled"><a href="http://www.freevisitorcounters.com">Free Counters</a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=028d11b09d03d7d34ca6d729e848283edc7e8f2f'></script> <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/771919/t/13"></script></div>
+</div>
+</footer>
+<script src="js/jquery.slim.min.js"></script><script src="js/popper.min.js"></script><script src="js/bootstrap.min.js"></script><script src="js/owl.carousel.min.js"></script><script src="js/aos.js"></script><script src="js/script.js"></script></body>
+</html>

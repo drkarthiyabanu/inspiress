@@ -1,0 +1,49 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the Login page.
+// -----------------------------------------------------------------------------
+.sidebar{
+    padding: 0px;
+    position: absolute;
+    box-shadow: none;
+    border-right: 1px solid #dfdfdf;
+    z-index: 1001;
+}
+
+.sidebar-nav{
+    &.modern-ui{
+        .nav-link{
+            color: #000;
+            font-size: 18px;
+            font-weight: 600;
+            background-color: rgba(0,0,0,0.04);
+            padding-left: 30px;
+            .menu-icon{
+                font-size: 22px;
+                color: #000;
+            }
+            i{
+                color: $brand-color;
+                font-size: 15px;
+                transform: rotate(180deg);
+                transition: all 0.5s ease;
+            }
+            &.collapsed{
+                background-color: #fff;
+                i{
+                    transform: rotate(0deg);
+                }
+            }
+        }
+        .nav-content{
+            li{
+                list-style-type: none;
+                a{
+                    color: #000;
+                    font-size: 14px;
+                    font-weight: 400; 
+                }
+            }
+           
+        }
+    }
+}

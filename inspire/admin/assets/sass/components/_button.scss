@@ -1,0 +1,71 @@
+.btn-primary{
+    &.theme-btn-inline{
+        border-radius: 1.0625rem;
+        padding: 0px 1.0625rem;
+        text-transform: capitalize;
+        transition: all 0.5s ease-in-out;
+        background-color: #ffa500 !important;
+        border: 0.125rem solid #ffa500 !important;
+        height: 36px;
+        line-height: 30px;
+        font-size: 14px !important;
+        font-weight: 600;
+        box-shadow: none;
+      
+        svg{
+            width: 20px;
+            height: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+        &:hover, &:focus{
+            background-color: #fff;
+            color: #ffa500 !important;
+            border: 0.125rem solid #ffa500 !important;
+            svg{
+                transform: rotate(360deg);
+            }
+        }
+    }
+}
+
+.btn-outline-primary{
+    &.theme-btn-inline-outline{
+        &.close{
+            border: 0.125rem solid $mid-grey !important;
+            color: $mid-grey;
+            &:hover, &:focus{
+                background-color: $mid-grey;
+                color: #fff;
+                border: 0.125rem solid $mid-grey !important;
+                svg{
+                    transform: rotate(360deg);
+                }
+            } 
+        }
+        border-radius: 1.0625rem;
+        padding: 0px 1.0625rem;
+        text-transform: capitalize;
+        transition: all 0.5s ease-in-out;
+        background-color: #fff;
+        color: #ffa500 !important;
+        border: 0.125rem solid #ffa500 !important;
+        height: 36px;
+        line-height: 30px;
+        font-size: 14px !important;
+        font-weight: 600;
+        box-shadow: none;  
+        svg{
+            width: 20px;
+            height: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+        &:hover, &:focus{
+            background-color: #ffa500 !important;
+            color: #fff;
+            border: 0.125rem solid #ffa500 !important;
+            svg{
+                transform: rotate(360deg);
+            }
+        } 
+    }
+}
