@@ -6,6 +6,8 @@ RewriteBase /inspire/
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
-# Rewrite clean URLs like /courses to /courses.php
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ $1.php [L]
+# Don't rewrite if already at index.php (prevent loops)
+RewriteCond %{REQUEST_URI} !^/inspire/index\.php
+
+# Rewrite all other requests to index.php
+RewriteRule ^(.*)$ index.php [L]

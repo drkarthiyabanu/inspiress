@@ -7,8 +7,8 @@ RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
 
 # Route /inspire/* to inspire/index.php
-RewriteRule ^inspire/(.*)$ inspire/index.php?%{QUERY_STRING} [L]
+RewriteRule ^inspire/(.*)$ inspire/index.php [L]
 
-# Rewrite clean URLs like /courses to /courses.php
+# Rewrite clean URLs like /courses to /courses.php (for root-level routes)
 RewriteCond %{REQUEST_FILENAME}.php -f
 RewriteRule ^(.+)$ $1.php [L]
