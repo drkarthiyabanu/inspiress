@@ -16,10 +16,12 @@ services:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: admin_edinz
+      MYSQL_USER: admin_edinz
+      MYSQL_PASSWORD: Ke2FES@e4evxIUT
     volumes:
-      - ./init.sql:/docker-entrypoint-initdb.d/01-init.sql
-      - ./admin_edinz.sql:/docker-entrypoint-initdb.d/02-admin_edinz.sql
+      - ./init-extra-db.sql:/docker-entrypoint-initdb.d/01-init-extra-db.sql
       - db_data:/var/lib/mysql
 
 volumes:
-  db_data:
+  db_data:  
