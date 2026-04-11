@@ -9,13 +9,10 @@ RUN a2enmod rewrite
 # Copy application code
 COPY . /var/www/html/
 
-# If the app uses a public directory, point Apache there
-RUN if [ -d /var/www/html/public ]; then \
-    sed -i 's#/var/www/html#/var/www/html/public#g' /etc/apache2/sites-available/000-default.conf; \
-  fi
-
-# Allow .htaccess overrides
-RUN sed -i '/<Directory \/var\/www\/>/,/<\/Directory>/s/AllowOverride None/AllowOverride All/' /etc/apache2/apache2.conf
+# Set the Apache document root to the public folder
+ENV APACHE_DOCUMENT_ROOT=/var/www/html/public
+RUN sed -i "s|DocumentRoot /var/www/html|DocumentRoot ${APACHE_DOCUMENT_ROOT}|g" /etc/apache2/sites-available/000-default.conf
+RUN sed -i "/<Directory \/var\/www\/>/,/<\/Directory>/s/AllowOverride None/AllowOverride All/" /etc/apache2/apache2.conf
 
 # Set permissions
 RUN chown -R www-data:www-data /var/www/html/
