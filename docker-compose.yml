@@ -8,7 +8,7 @@ services:
     volumes:
       - .:/var/www/html
     environment:
-      APACHE_DOCUMENT_ROOT: /var/www/html/inspire
+      APACHE_DOCUMENT_ROOT: /var/www/html/public/inspire
 
   db:
     image: mysql:8.0
