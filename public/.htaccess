@@ -1,14 +1,10 @@
 Options +FollowSymLinks
 RewriteEngine On
 RewriteBase /
-
 # Skip rewrite if it's a real file or directory
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-f
-
-# Route /inspire/* to inspire/index.php
-RewriteRule ^inspire/(.*)$ inspire/index.php [L]
-
-# Rewrite clean URLs like /courses to /courses.php (for root-level routes)
-RewriteCond %{REQUEST_FILENAME}.php -f
-RewriteRule ^(.+)$ $1.php [L]
+# Don't rewrite if already at index.php (prevent loops)
+RewriteCond %{REQUEST_URI} !^/index\.php
+# Rewrite all other requests to index.php
+RewriteRule ^(.*)$ index.php [L]
