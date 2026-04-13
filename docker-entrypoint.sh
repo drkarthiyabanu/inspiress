@@ -19,7 +19,7 @@ fi
 escaped_root=$(printf '%s\n' "$APACHE_DOCUMENT_ROOT" | sed 's/[\/&]/\\&/g')
 
 sed -i -E "s|DocumentRoot .*|DocumentRoot ${APACHE_DOCUMENT_ROOT}|g" /etc/apache2/sites-available/000-default.conf
-sed -i -E "s|<Directory /var/www(/html)?/?\>|<Directory ${APACHE_DOCUMENT_ROOT}>|g" /etc/apache2/apache2.conf
+sed -i -E "s|<Directory /var/www(/html)?>|<Directory ${APACHE_DOCUMENT_ROOT}>|g" /etc/apache2/apache2.conf
 sed -i "/<Directory ${escaped_root}>/,/<\/Directory>/ s/AllowOverride None/AllowOverride All/" /etc/apache2/apache2.conf
 
 exec "$@"
